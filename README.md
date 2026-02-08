@@ -321,5 +321,6 @@ For issues and questions, please create an issue in the GitHub repository.
 ---
 
 **Built with ❤️ by Viraj Naik**
-#   j o b - a p p l i c a t i o n - s y s t e m  
+#   j o b - a p p l i c a t i o n - s y s t e m 
+ 
  

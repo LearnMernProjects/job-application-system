@@ -1,0 +1,101 @@
+.apply-form {
+  background: linear-gradient(135deg, #1a1f3a, #2d3561);
+  padding: 32px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  max-width: 550px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.apply-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0, 255, 65, 0.3), transparent);
+}
+
+.apply-form h3 {
+  margin-top: 0;
+  margin-bottom: 28px;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #e0e7ff 0%, #00D9FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.apply-form .form-group {
+  margin-bottom: 18px;
+}
+
+.apply-form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #e0e7ff;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.apply-form .form-group input,
+.apply-form .form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  background-color: rgba(0, 217, 255, 0.05);
+  border: 2px solid rgba(0, 217, 255, 0.3);
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  color: #e0e7ff;
+}
+
+.apply-form .form-group input::placeholder,
+.apply-form .form-group textarea::placeholder {
+  color: #8b92b0;
+}
+
+.apply-form .form-group input:focus,
+.apply-form .form-group textarea:focus {
+  outline: none;
+  border-color: #00D9FF;
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+  background-color: rgba(0, 217, 255, 0.1);
+}
+
+.apply-form button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00FF41, #00D9FF);
+  color: #0A0E27;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.4);
+  font-weight: 800;
+}
+
+.apply-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(0, 255, 65, 0.6);
+}
+
+.apply-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}

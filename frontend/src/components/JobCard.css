@@ -1,0 +1,138 @@
+.job-card {
+  background: linear-gradient(135deg, #1a1f3a, #2d3561);
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 18px;
+  border: 2px solid rgba(0, 217, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.job-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.job-card:hover {
+  border-color: #00D9FF;
+  box-shadow: 0 12px 48px rgba(0, 217, 255, 0.2);
+  transform: translateY(-4px);
+}
+
+.job-card:hover::before {
+  left: 100%;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.job-header h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #e0e7ff;
+  font-weight: 700;
+}
+
+.job-type {
+  margin: 4px 0 0 0;
+  font-size: 12px;
+  color: #00D9FF;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.job-body {
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.job-role,
+.job-location,
+.job-stipend,
+.job-duration {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #8b92b0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.job-role::before {
+  content: '◆';
+  color: #4f46e5;
+}
+
+.job-location::before {
+  content: '◆';
+  color: #00FF41;
+}
+
+.job-stipend::before {
+  content: '◆';
+  color: #00D9FF;
+}
+
+.job-duration::before {
+  content: '◆';
+  color: #9D4EDD;
+}
+
+.job-description {
+  margin: 14px 0;
+  color: #8b92b0;
+  font-size: 14px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.job-skills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 14px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(0, 217, 255, 0.2));
+  color: #00D9FF;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid rgba(0, 217, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.4), rgba(0, 217, 255, 0.4));
+  border-color: #00D9FF;
+  color: #fff;
+}
+
+.job-footer {
+  display: flex;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
