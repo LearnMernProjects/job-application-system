@@ -20,6 +20,8 @@
     "@types/react-dom": "^18.2.15",
     "@vitejs/plugin-react": "^4.2.1",
     "vite": "^5.0.8",
-    "@react-router/dev": "^7.0.0"
+    "@react-router/dev": "^7.0.0",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/vite": "^4.0.0"
   }
 }
